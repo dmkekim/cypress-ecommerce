@@ -13,7 +13,7 @@ pipeline {
         sh 'echo hello world'
         sh 'pwd'
         sh 'npm install --loglevel=verbose'
-        sh "npm run test"
+        sh "npm run test:jenkins"
       }
     }
   }
