@@ -9,9 +9,8 @@ pipeline {
   stages {
     stage('build and test') {
       steps {
-        sh 'sudo chown -R 130:138 \"/.npm\"'
         sh 'echo hello world'
-        sh 'npm i'
+        sh 'npm ci'
         sh "npm run test"
       }
     }
