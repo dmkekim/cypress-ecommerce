@@ -10,7 +10,7 @@ pipeline {
     stage('build and test') {
       steps {
         sh 'echo hello world'
-        sh 'npm install'
+        sh 'npm install --loglevel=verbose'
         sh "npm run test"
       }
     }
