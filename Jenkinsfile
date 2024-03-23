@@ -10,8 +10,8 @@ pipeline {
     stage('build and test') {
       steps {
         sh 'echo hello world'
-        sh 'npm ci'
-        sh "npm run test"
+        sh 'sudo npm ci'
+        sh "sudo npm run test"
       }
     }
   }
